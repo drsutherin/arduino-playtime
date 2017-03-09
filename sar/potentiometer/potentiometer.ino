@@ -19,14 +19,14 @@ void loop() {
   //Serial.println(val);
   if (now > (prev+500)) {
     prev = now;
-    uVal = (uint16_t) val;
+//    uVal = (uint16_t) val;
     Serial.print("Time: ");
     Serial.println(now);
     Serial.print("Value: ");
     Serial.println(val);
-    Serial.print("uVal: ");
-    Serial.println(uVal);
-    Serial.println();
+//    Serial.print("uVal: ");
+//    Serial.println(uVal);
+//    Serial.println();
   }
   if (val > 500) {  digitalWrite(led,HIGH); }
   else {  digitalWrite(led,LOW);  }
